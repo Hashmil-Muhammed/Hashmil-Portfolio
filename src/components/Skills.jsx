@@ -257,8 +257,7 @@ const Skills = () => {
             className="flex items-center gap-4 mb-6"
           >
             <span 
-              className="text-sm font-bold tracking-[0.2em] uppercase text-white dark:text-[#07070A]" 
-              style={{ WebkitTextStroke: '1px #000000', textShadow: '2px 2px 0px #000000' }}
+              className="text-sm font-bold tracking-[0.2em] uppercase text-white dark:text-[#0A0A0D] skills-title-sm" 
             >
               06.
             </span>
@@ -267,14 +266,7 @@ const Skills = () => {
               style={{ fontFamily: '"Syne", sans-serif' }}
             >
               <span 
-                className="py-1 inline-block text-white dark:text-[#07070A] cursor-default"
-                style={{ 
-                  WebkitTextStroke: '2px #000000', 
-                  textShadow: '5px 5px 0px #000000',
-                  transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.color = '#000000'; e.currentTarget.style.textShadow = '5px 5px 0px #888888'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.color = ''; e.currentTarget.style.textShadow = '5px 5px 0px #000000'; }}
+                className="py-1 inline-block text-white dark:text-[#0A0A0D] cursor-default skills-title-lg"
               >
                 Skills Suite
               </span>

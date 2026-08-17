@@ -194,6 +194,35 @@
   .dark .contact-input:focus {
     border-bottom-color: #F4F4F6;
   }
+
+  /* Custom text outline and shadow for Skills title */
+  .skills-title-sm {
+    -webkit-text-stroke: 1px #111115;
+    text-shadow: 2px 2px 0px #111115;
+  }
+  .dark .skills-title-sm {
+    -webkit-text-stroke: 1px #F4F4F6;
+    text-shadow: 2px 2px 0px #F4F4F6;
+  }
+
+  .skills-title-lg {
+    -webkit-text-stroke: 2px #111115;
+    text-shadow: 5px 5px 0px #111115;
+    transition: color 0.4s ease-out, text-shadow 0.4s ease-out;
+  }
+  .dark .skills-title-lg {
+    -webkit-text-stroke: 2px #F4F4F6;
+    text-shadow: 5px 5px 0px #F4F4F6;
+  }
+
+  .skills-title-lg:hover {
+    color: #111115;
+    text-shadow: 5px 5px 0px #888888;
+  }
+  .dark .skills-title-lg:hover {
+    color: #F4F4F6;
+    text-shadow: 5px 5px 0px #888888;
+  }
 }
 
 ::-webkit-scrollbar {
