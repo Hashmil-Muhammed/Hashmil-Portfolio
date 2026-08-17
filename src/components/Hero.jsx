@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { FiDownload, FiX } from 'react-icons/fi';
@@ -276,39 +277,42 @@ const Hero = ({ isReady }) => {
       </div>
 
       {/* ── 6. RESUME MODAL ─────────────────────────────────── */}
-      <div className={`fixed inset-0 transition-opacity duration-300 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 ${showResume ? 'opacity-100 pointer-events-auto z-[100]' : 'opacity-0 pointer-events-none z-[-1]'}`}>
-        <div className="bg-white dark:bg-dark-bg w-full max-w-5xl h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden relative">
-
-          {/* Header */}
-          <div className="border-b border-border dark:border-dark-border p-4 flex justify-between items-center bg-gray-50 dark:bg-dark-surface">
-            <h2 className="font-bold text-primary dark:text-dark-primary text-lg">Hashmil's Resume</h2>
-            <div className="flex items-center gap-4">
-              <a
-                href="/docs/Hashmil_s_Resume.pdf"
-                download
-                className="flex items-center gap-2 text-sm font-semibold text-primary dark:text-dark-primary hover:opacity-70 transition-opacity"
-              >
-                <FiDownload className="text-lg" /> Download PDF
-              </a>
-              <button
-                onClick={() => setShowResume(false)}
-                className="text-secondary dark:text-dark-secondary hover:text-red-500 transition-colors p-1"
-              >
-                <FiX className="text-2xl" />
-              </button>
+      {createPortal(
+        <div className={`fixed inset-0 transition-opacity duration-300 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 ${showResume ? 'opacity-100 pointer-events-auto z-[9999]' : 'opacity-0 pointer-events-none z-[-1]'}`}>
+          <div className="bg-white dark:bg-dark-bg w-full max-w-5xl h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden relative">
+  
+            {/* Header */}
+            <div className="border-b border-border dark:border-dark-border p-4 flex justify-between items-center bg-gray-50 dark:bg-dark-surface">
+              <h2 className="font-bold text-primary dark:text-dark-primary text-lg">Hashmil's Resume</h2>
+              <div className="flex items-center gap-4">
+                <a
+                  href="/docs/Hashmil_s_Resume.pdf"
+                  download
+                  className="flex items-center gap-2 text-sm font-semibold text-primary dark:text-dark-primary hover:opacity-70 transition-opacity"
+                >
+                  <FiDownload className="text-lg" /> Download PDF
+                </a>
+                <button
+                  onClick={() => setShowResume(false)}
+                  className="text-secondary dark:text-dark-secondary hover:text-red-500 transition-colors p-1"
+                >
+                  <FiX className="text-2xl" />
+                </button>
+              </div>
+            </div>
+  
+            {/* Body */}
+            <div className="flex-1 w-full h-full bg-gray-100 dark:bg-gray-900">
+              <iframe
+                src="/docs/Hashmil_s_Resume.pdf#toolbar=0&view=FitH"
+                className="w-full h-full border-none"
+                title="Resume Preview"
+              />
             </div>
           </div>
-
-          {/* Body */}
-          <div className="flex-1 w-full h-full bg-gray-100 dark:bg-gray-900">
-            <iframe
-              src="/docs/Hashmil_s_Resume.pdf#toolbar=0&view=FitH"
-              className="w-full h-full border-none"
-              title="Resume Preview"
-            />
-          </div>
-        </div>
-      </div>
+        </div>,
+        document.body
+      )}
     </section>
   );
 };
