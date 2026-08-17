@@ -900,7 +900,7 @@ const Certifications = () => {
                       const isActive = idx === activeGalleryTab;
                       return (
                         <button
-                          key={cert.id}
+                          key={`${cert.id}-${idx}`}
                           onClick={() => setActiveGalleryTab(idx)}
                           type="button"
                           className={`relative overflow-hidden text-center md:text-left cursor-pointer whitespace-nowrap shrink-0 h-[48px] sm:h-[52px] lg:h-[56px] px-4 sm:px-5.5 rounded-xl md:rounded-l-2xl md:rounded-r-none flex items-center w-full select-none ${isActive

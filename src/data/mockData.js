@@ -551,7 +551,7 @@ export const galleryCertificatesData = [
     image: "/certificates/BlueStock-DataAnalyst_Intern.jpg"
   },
   {
-    id: 6,
+    id: 7,
     tabName: "What Is GenAI?",
     shortOrg: "LinkedIn Learning",
     title: "What Is Generative AI?",
@@ -577,7 +577,7 @@ export const galleryCertificatesData = [
     image: "/certificates/What Is Generative AI.jpg"
   },
   {
-    id: 7,
+    id: 8,
     tabName: "Data Analyst (Big 4)",
     shortOrg: "One Roadmap",
     title: "Data Analyst - Big 4 Ready",
@@ -603,7 +603,7 @@ export const galleryCertificatesData = [
     image: "/certificates/Data Analyst - Big 4 Ready.jpg"
   },
   {
-    id: 8,
+    id: 9,
     tabName: "AI Orientation",
     shortOrg: "Technovalley",
     title: "5-Day Career Orientation on Artificial Intelligence",
@@ -629,7 +629,7 @@ export const galleryCertificatesData = [
     image: "/certificates/5-Day Career Orientation on Artificial Intelligence.jpg"
   },
   {
-    id: 9,
+    id: 10,
     tabName: "Data Science & ML",
     shortOrg: "GUVI / HCL",
     title: "Level Up your Career with Data Science & Machine Learning Fundamentals",
@@ -655,7 +655,7 @@ export const galleryCertificatesData = [
     image: "/certificates/HCL GUVI Certification.png"
   },
   {
-    id: 10,
+    id: 11,
     tabName: "Data Science (Python)",
     shortOrg: "Luminar Technolab",
     title: "Data Science - Python",
@@ -681,7 +681,7 @@ export const galleryCertificatesData = [
     image: "/certificates/Luminar - Course Completion Certificat3.jpg"
   },
   {
-    id: 11,
+    id: 12,
     tabName: "NACTET Data Science",
     shortOrg: "NACTET / Luminar",
     title: "DATA SCIENCE - Python",
@@ -707,7 +707,7 @@ export const galleryCertificatesData = [
     image: "/certificates/Luminar - NACTET Certification.jpg"
   },
   {
-    id: 12,
+    id: 13,
     tabName: "AI Agents Course",
     shortOrg: "Kaggle",
     title: "5-Day AI Agents: Intensive Vibe Coding Course",
@@ -733,7 +733,7 @@ export const galleryCertificatesData = [
     image: "/certificates/5-Day AI Agents_ Intensive Vibe Coding Course.png"
   },
   {
-    id: 13,
+    id: 14,
     tabName: "AI & Data Scientist",
     shortOrg: "One Roadmap",
     title: "AI and Data Scientist",
@@ -759,7 +759,7 @@ export const galleryCertificatesData = [
     image: "/certificates/AI and Data Scientist-Certificate.jpg"
   },
   {
-    id: 14,
+    id: 15,
     tabName: "AI Engineer",
     shortOrg: "One Roadmap",
     title: "AI Engineer",
