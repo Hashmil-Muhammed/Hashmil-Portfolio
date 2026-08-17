@@ -257,7 +257,7 @@ const Skills = () => {
             className="flex items-center gap-4 mb-6"
           >
             <span 
-              className="text-sm font-bold tracking-[0.2em] uppercase skills-title-sm" 
+              className="text-sm font-bold tracking-[0.2em] uppercase text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] dark:drop-shadow-none" 
             >
               06.
             </span>
@@ -266,17 +266,17 @@ const Skills = () => {
               style={{ fontFamily: '"Syne", sans-serif' }}
             >
               <span 
-                className="py-1 inline-block cursor-default skills-title-lg"
+                className="py-1 inline-block cursor-default text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center [filter:drop-shadow(-1px_-1px_1px_rgba(255,255,255,1))_drop-shadow(3px_5px_8px_rgba(0,0,0,0.4))] dark:[filter:none]"
               >
                 Skills Suite
               </span>
             </h2>
-            <div className="flex-1 h-px bg-gray-200 dark:bg-white/20 ml-4 hidden sm:block"></div>
+            <div className="flex-1 h-px bg-gray-200 dark:bg-white/20 ml-4 hidden sm:block opacity-50"></div>
             <a
               href="https://github.com/Hashmil-Muhammed"
               target="_blank"
               rel="noreferrer"
-              className="hidden sm:flex items-center gap-2 transition-all text-sm font-bold text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white group"
+              className="hidden sm:flex items-center gap-2 transition-all text-sm font-bold text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white group opacity-30 hover:opacity-100"
               style={{ fontFamily: '"Space Grotesk",sans-serif' }}
             >
               <SiGithub className="w-4 h-4 group-hover:scale-110 transition-transform" />
@@ -285,7 +285,7 @@ const Skills = () => {
           </motion.div>
 
           {/* Main Title Block */}
-          <div className="relative mb-6 overflow-hidden">
+          <div className="relative overflow-hidden">
             {/* Giant background number watermark */}
             <span
               className="absolute -top-4 -left-2 text-[120px] md:text-[180px] font-black leading-none text-gray-100 dark:text-white/[0.03] select-none pointer-events-none z-0"
@@ -333,17 +333,17 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex items-center gap-4 sm:gap-6 flex-wrap text-sm"
+            className="flex items-center gap-3 sm:gap-5 flex-wrap text-xs"
           >
             {/* Metric 1: Tools */}
             <motion.div 
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex items-center gap-2 cursor-default group"
+              className="flex items-center gap-1.5 cursor-default group"
             >
-              <LuWrench className="w-4 h-4 text-red-500 shrink-0 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300" />
-              <span className="font-mono font-black text-sm sm:text-base text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={PURE_SKILLS.length} suffix="+" /></span>
-              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Tools</span>
+              <LuWrench className="w-3.5 h-3.5 text-red-500 shrink-0 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300" />
+              <span className="font-mono font-black text-xs sm:text-sm text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={PURE_SKILLS.length} suffix="+" /></span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Tools</span>
             </motion.div>
 
             <span className="hidden sm:inline text-gray-300 dark:text-white/20 select-none">•</span>
@@ -352,11 +352,11 @@ const Skills = () => {
             <motion.div 
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex items-center gap-2 cursor-default group"
+              className="flex items-center gap-1.5 cursor-default group"
             >
-              <LuLayers className="w-4 h-4 text-red-500 shrink-0 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-              <span className="font-mono font-black text-sm sm:text-base text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300">8</span>
-              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Domains</span>
+              <LuLayers className="w-3.5 h-3.5 text-red-500 shrink-0 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="font-mono font-black text-xs sm:text-sm text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300">8</span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Domains</span>
             </motion.div>
 
             <span className="hidden sm:inline text-gray-300 dark:text-white/20 select-none">•</span>
@@ -365,11 +365,11 @@ const Skills = () => {
             <motion.div 
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex items-center gap-2 cursor-default group"
+              className="flex items-center gap-1.5 cursor-default group"
             >
-              <LuCodeXml className="w-4 h-4 text-red-500 shrink-0 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300" />
-              <span className="font-mono font-black text-sm sm:text-base text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={15} suffix="+" /></span>
-              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Frameworks</span>
+              <LuCodeXml className="w-3.5 h-3.5 text-red-500 shrink-0 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300" />
+              <span className="font-mono font-black text-xs sm:text-sm text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={15} suffix="+" /></span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Frameworks</span>
             </motion.div>
 
             <span className="hidden sm:inline text-gray-300 dark:text-white/20 select-none">•</span>
@@ -378,11 +378,11 @@ const Skills = () => {
             <motion.div 
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex items-center gap-2 cursor-default group"
+              className="flex items-center gap-1.5 cursor-default group"
             >
-              <LuRocket className="w-4 h-4 text-red-500 shrink-0 group-hover:scale-110 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
-              <span className="font-mono font-black text-sm sm:text-base text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={10} suffix="+" /></span>
-              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Projects</span>
+              <LuRocket className="w-3.5 h-3.5 text-red-500 shrink-0 group-hover:scale-110 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+              <span className="font-mono font-black text-xs sm:text-sm text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={10} suffix="+" /></span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">Projects</span>
             </motion.div>
 
             <span className="hidden sm:inline text-gray-300 dark:text-white/20 select-none">•</span>
@@ -391,13 +391,12 @@ const Skills = () => {
             <motion.div 
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex items-center gap-2 cursor-default group"
+              className="flex items-center gap-1.5 cursor-default group"
             >
-              <LuBrainCircuit className="w-4 h-4 text-red-500 shrink-0 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
-              <span className="font-mono font-black text-sm sm:text-base text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={12} suffix="+" /></span>
-              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">AI Models</span>
+              <LuBrainCircuit className="w-3.5 h-3.5 text-red-500 shrink-0 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="font-mono font-black text-xs sm:text-sm text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={12} suffix="+" /></span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">AI Models</span>
             </motion.div>
-
 
             <span className="hidden sm:inline text-gray-300 dark:text-white/20 select-none">•</span>
 
@@ -405,11 +404,11 @@ const Skills = () => {
             <motion.div 
               whileHover={{ scale: 1.05, y: -2 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex items-center gap-2 cursor-default group"
+              className="flex items-center gap-1.5 cursor-default group"
             >
-              <LuNetwork className="w-4 h-4 text-red-500 shrink-0 group-hover:scale-110 group-hover:rotate-180 transition-transform duration-500" />
-              <span className="font-mono font-black text-sm sm:text-base text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={20} suffix="+" /></span>
-              <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">APIs</span>
+              <LuNetwork className="w-3.5 h-3.5 text-red-500 shrink-0 group-hover:scale-110 group-hover:rotate-180 transition-transform duration-500" />
+              <span className="font-mono font-black text-xs sm:text-sm text-gray-900 dark:text-white tracking-tight group-hover:text-red-500 transition-colors duration-300"><AnimatedCounter target={20} suffix="+" /></span>
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">APIs</span>
             </motion.div>
           </motion.div>
 
