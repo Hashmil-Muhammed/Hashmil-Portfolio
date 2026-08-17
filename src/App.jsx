@@ -20,19 +20,15 @@ function App() {
     document.fonts.ready.then(() => setIsReady(true));
   }, []);
 
-  // Dark mode persistence
+  // Always default to light mode on mount
   useEffect(() => {
-    const saved = localStorage.getItem('hm-dark-mode');
-    if (saved === 'true') {
-      setDarkMode(true);
-      document.documentElement.classList.add('dark');
-    }
+    document.documentElement.classList.remove('dark');
+    localStorage.removeItem('hm-dark-mode');
   }, []);
 
   const toggleDark = () => {
     const next = !darkMode;
     setDarkMode(next);
-    localStorage.setItem('hm-dark-mode', next.toString());
     if (next) {
       document.documentElement.classList.add('dark');
     } else {
