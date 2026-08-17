@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import './index.css';
 
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -95,7 +96,9 @@ function App() {
         {/* 2. BACKGROUND REVEAL LAYER (Contact Section) */}
         {/* Fixed to the bottom of the screen, behind the foreground content */}
         <div className="fixed bottom-0 left-0 w-full h-screen z-0">
-          <Contact />
+          <div className="h-full w-full">
+            <Contact />
+          </div>
         </div>
 
       </main>

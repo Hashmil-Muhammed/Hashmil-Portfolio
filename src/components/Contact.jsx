@@ -566,7 +566,7 @@ Automated from Hashmil's Portfolio
             {/* Body */}
             <div className="flex-1 w-full h-full bg-gray-100 dark:bg-gray-900">
               <iframe
-                src="/Hashmil_s_Resume.pdf#toolbar=0&view=FitH"
+                src="/docs/Hashmil_s_Resume.pdf#toolbar=0&view=FitH"
                 className="w-full h-full border-none"
                 title="Resume Preview"
               />
