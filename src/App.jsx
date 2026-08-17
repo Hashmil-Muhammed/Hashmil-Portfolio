@@ -20,15 +20,21 @@ function App() {
     document.fonts.ready.then(() => setIsReady(true));
   }, []);
 
-  // Always default to light mode on mount
+  // Session-based dark mode persistence (survives refresh, resets on new visit/tab close)
   useEffect(() => {
-    document.documentElement.classList.remove('dark');
-    localStorage.removeItem('hm-dark-mode');
+    const saved = sessionStorage.getItem('hm-dark-mode');
+    if (saved === 'true') {
+      setDarkMode(true);
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
 
   const toggleDark = () => {
     const next = !darkMode;
     setDarkMode(next);
+    sessionStorage.setItem('hm-dark-mode', next.toString());
     if (next) {
       document.documentElement.classList.add('dark');
     } else {
