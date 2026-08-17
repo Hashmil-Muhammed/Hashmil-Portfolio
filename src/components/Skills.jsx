@@ -257,7 +257,7 @@ const Skills = () => {
             className="flex items-center gap-4 mb-6"
           >
             <span 
-              className="text-sm font-bold tracking-[0.2em] uppercase text-white dark:text-[#0A0A0D] skills-title-sm" 
+              className="text-sm font-bold tracking-[0.2em] uppercase skills-title-sm" 
             >
               06.
             </span>
@@ -266,7 +266,7 @@ const Skills = () => {
               style={{ fontFamily: '"Syne", sans-serif' }}
             >
               <span 
-                className="py-1 inline-block text-white dark:text-[#0A0A0D] cursor-default skills-title-lg"
+                className="py-1 inline-block cursor-default skills-title-lg"
               >
                 Skills Suite
               </span>
