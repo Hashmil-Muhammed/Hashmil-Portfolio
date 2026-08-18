@@ -88,8 +88,7 @@ function App() {
           <About />
           <Services />
           <Projects />
-          
-          <div className="sticky top-[min(100vh,850px)] z-20 bg-white dark:bg-[#0a0a0a] w-full">
+          <div className="sticky top-[min(100vh,850px)] w-full z-20 bg-white dark:bg-[#0a0a0a]">
             <ExperienceEducation />
             <Certifications />
             <Skills />
