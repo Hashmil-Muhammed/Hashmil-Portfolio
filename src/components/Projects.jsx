@@ -470,13 +470,13 @@ const Projects = () => {
               {/* Foreground Text & Filters */}
               <div className="w-[70rem] relative z-20 flex flex-col justify-center">
                 <motion.h2
-                  className="text-5xl lg:text-7xl xl:text-[5.5rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-800 to-gray-500 dark:from-white dark:to-gray-400 drop-shadow-sm leading-[1] tracking-tight mb-6 max-w-4xl"
+                  className="text-4xl lg:text-6xl xl:text-[4.5rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-800 to-gray-500 dark:from-white dark:to-gray-400 drop-shadow-sm leading-[1] tracking-tight mb-6 max-w-4xl"
                   style={{ fontFamily: '"Syne", sans-serif' }}
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  Showcasing <span className="text-5xl lg:text-7xl xl:text-[5.5rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 drop-shadow-sm leading-[1] tracking-tight mb-6 max-w-4xl">06+</span> <br />
+                  Showcasing <span className="text-4xl lg:text-6xl xl:text-[4.5rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 drop-shadow-sm leading-[1] tracking-tight mb-6 max-w-4xl">06+</span> <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                     AI & Full-Stack
                   </span> <br />
