@@ -510,8 +510,7 @@ html {
   .animate-marquee-right:hover {
     animation-play-state: paused;
   }
-}. p o r t r a i t - z o o m   {   z o o m :   1 ;   }   @ m e d i a   ( m a x - a s p e c t - r a t i o :   1 / 1 )   {   . p o r t r a i t - z o o m   {   z o o m :   1 . 8 ;   }   }  
- 
+}
 
 .portrait-zoom { zoom: 1; }
 @media (max-aspect-ratio: 1/1) {
