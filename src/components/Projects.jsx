@@ -179,11 +179,11 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className="group/link flex items-center gap-1.5 text-white/80 hover:text-white transition-colors duration-200"
             >
-              <span className="text-[11px] font-bold tracking-widest uppercase relative overflow-hidden" style={customFont}>
+              <span className="text-[9px] font-bold tracking-widest uppercase relative overflow-hidden" style={customFont}>
                 View Live Project
                 <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white transform -translate-x-full group-hover/link:translate-x-0 transition-transform duration-300 ease-out"></span>
               </span>
-              <FiExternalLink className="shrink-0 transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 transition-transform duration-200" size={13} />
+              <FiExternalLink className="shrink-0 transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 transition-transform duration-200" size={10} />
             </a>
 
             {project.gitLink && (
@@ -191,10 +191,10 @@ const ProjectCard = ({ project }) => {
                 href={project.gitLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white hover:text-black border border-white/20 transition-all duration-200 hover:scale-105 shadow-sm transform-gpu"
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white hover:text-black border border-white/20 transition-all duration-200 hover:scale-105 shadow-sm transform-gpu"
                 title="View Source Code"
               >
-                <FiGithub size={16} />
+                <FiGithub size={13} />
               </a>
             )}
           </div>
