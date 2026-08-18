@@ -541,4 +541,12 @@ html {
     min-height: auto !important;
     height: auto !important;
   }
+
+  .mobile-footer-hole {
+    margin-bottom: 850px !important;
+  }
+
+  .mobile-footer-container {
+    height: 850px !important;
+  }
 }

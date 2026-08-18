@@ -82,8 +82,8 @@ function App() {
       <main className="relative w-full bg-transparent">
         
         {/* 1. FOREGROUND LAYER (Contains everything including Skills) */}
-        {/* The mb-[min(100vh,850px)] creates a transparent "hole" at the very bottom of the scrollable page to reveal the footer */}
-        <div className="relative z-10 w-full bg-white dark:bg-[#0a0a0a] shadow-[0_20px_50px_rgba(0,0,0,0.5)] mb-[min(100vh,850px)]">
+        {/* The mb-[100vh] creates a transparent "hole" at the very bottom of the scrollable page to reveal the footer */}
+        <div className="relative z-10 w-full bg-white dark:bg-[#0a0a0a] shadow-[0_20px_50px_rgba(0,0,0,0.5)] mb-[100vh] mobile-footer-hole">
           <Hero isReady={isReady} />
           <About />
           <Services />
@@ -97,7 +97,7 @@ function App() {
 
         {/* 2. BACKGROUND REVEAL LAYER (Contact Section) */}
         {/* Fixed to the bottom of the screen, behind the foreground content */}
-        <div className="fixed bottom-0 left-0 w-full h-[min(100vh,850px)] z-0">
+        <div className="fixed bottom-0 left-0 w-full h-screen mobile-footer-container z-0">
           <div className="h-full w-full">
             <Contact />
           </div>
