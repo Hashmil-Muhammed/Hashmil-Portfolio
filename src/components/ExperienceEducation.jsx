@@ -168,9 +168,19 @@ const ExperienceEducation = () => {
     }
   });
 
+  const [scrollOffset, setScrollOffset] = useState(['start center', window.innerWidth < 768 ? 'end 60%' : 'end 0%']);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScrollOffset(['start center', window.innerWidth < 768 ? 'end 60%' : 'end 0%']);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: timelineRef,
-    offset: ['start center', 'end 0%'],
+    offset: scrollOffset,
   });
 
   const updateBadgePosition = useCallback((v) => {
