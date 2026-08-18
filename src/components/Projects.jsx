@@ -333,8 +333,7 @@ const Projects = () => {
               alt="Abstract Shape"
               className="absolute -top-24 -left-24 w-[300px] md:w-[550px] transform-gpu"
               initial={{ opacity: 0, scale: 0.6, x: -80, y: -80 }}
-              whileInView={{ opacity: 0.6, scale: 1, x: 0, y: 0 }}
-              viewport={{ once: false, amount: 0.3 }}
+              animate={{ opacity: 0.6, scale: 1, x: 0, y: 0 }}
               transition={{ duration: 1.2, ease: "circOut" }}
               style={{ willChange: 'transform, opacity' }}
             />
@@ -344,8 +343,7 @@ const Projects = () => {
               alt="Abstract Shape"
               className="absolute bottom-[10%] -right-24 w-[350px] md:w-[700px] transform-gpu"
               initial={{ opacity: 0, scale: 0.6, x: 80, y: 80 }}
-              whileInView={{ opacity: 0.6, scale: 1, x: 0, y: 0 }}
-              viewport={{ once: false, amount: 0.3 }}
+              animate={{ opacity: 0.6, scale: 1, x: 0, y: 0 }}
               transition={{ duration: 1.5, ease: "circOut", delay: 0.1 }}
               style={{ willChange: 'transform, opacity' }}
             />
@@ -362,7 +360,7 @@ const Projects = () => {
 
           {/* Section Header */}
           {/* Zoom-Proof Header Container: Anchored to the vertical center (top-1/2) just like the Macbook composition, so their relative distance never changes when zooming! */}
-          <div className="absolute top-1/2 -translate-y-[16rem] md:-translate-y-[21.5rem] left-[8vw] z-20 w-max pointer-events-none flex flex-col">
+          <div className="absolute top-1/2 -translate-y-[16rem] md:-translate-y-[21.5rem] left-[8vw] z-20 w-max pointer-events-none flex flex-col portrait-zoom">
             <div className="flex items-center gap-4 mb-1 whitespace-nowrap">
               <span className="text-sm font-normal tracking-[0.2em] text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none uppercase shrink-0">03.</span>
               <h2 className="text-3xl md:text-5xl font-extrabold text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none tracking-tight shrink-0" style={{ fontFamily: '"Syne", sans-serif' }}>
@@ -409,7 +407,7 @@ const Projects = () => {
           {/* Horizontally scrolling strip */}
           <motion.div
             ref={scrollStripRef}
-            className="flex items-center h-full gap-16 pl-[8vw] pr-[30vw] relative z-10 transform-gpu w-max"
+            className="flex items-center h-full gap-16 pl-[8vw] pr-[30vw] relative z-10 transform-gpu w-max portrait-zoom"
             style={{ x: xTranslate, willChange: 'transform' }}
           >
 
@@ -475,8 +473,7 @@ const Projects = () => {
                   className="text-5xl lg:text-7xl xl:text-[5.5rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-800 to-gray-500 dark:from-white dark:to-gray-400 drop-shadow-sm leading-[1] tracking-tight mb-6 max-w-4xl"
                   style={{ fontFamily: '"Syne", sans-serif' }}
                   initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                 >
                   Showcasing <span className="text-5xl lg:text-7xl xl:text-[5.5rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 drop-shadow-sm leading-[1] tracking-tight mb-6 max-w-4xl">06+</span> <br />
@@ -491,8 +488,7 @@ const Projects = () => {
                   className="text-gray-600 dark:text-gray-400 text-base md:text-lg max-w-2xl leading-relaxed mb-6"
                   style={{ fontFamily: '"Space Grotesk", sans-serif', fontWeight: 600, fontStyle: 'italic', letterSpacing: '0.02em' }}
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
                 >
                   {/* Engineered with precision — translating complex data into scalable production-grade applications and intelligent multimodal systems. */}
@@ -502,8 +498,7 @@ const Projects = () => {
                 <motion.div
                   className="flex items-center gap-2 mb-2 ml-2"
                   initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
                   <div className="w-2.5 h-2.5 rounded-full bg-indigo-500 shadow-[0_0_10px_rgba(99,102,241,0.5)]"></div>
@@ -515,8 +510,7 @@ const Projects = () => {
                 <motion.div
                   className="flex flex-wrap items-center gap-3 mt-2"
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
                 >
                   {['All', 'Full-Stack', 'AI & ML', 'Data Science & Analytics', 'Agentic AI'].map((filter) => {
@@ -545,8 +539,7 @@ const Projects = () => {
                 key={project.id}
                 className="flex-shrink-0 flex items-center justify-center transform-gpu"
                 initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-100px' }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: index * 0.05, ease: [0.22, 1, 0.36, 1] }}
               >
                 <ProjectCard project={project} />
