@@ -100,7 +100,7 @@ Automated from Hashmil's Portfolio
     <>
       <footer
         id="contact"
-        className="relative z-10 w-full h-screen flex flex-col justify-between bg-[#111115] text-white pt-24 pb-10 px-6 lg:px-12 overflow-hidden"
+        className="relative z-10 w-full h-full flex flex-col justify-between bg-[#111115] text-white pt-24 pb-10 px-6 lg:px-12 overflow-hidden"
       >
         {/* Subtle Background Glow/Gradient for Premium Feel */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/[0.02] rounded-full blur-[120px] pointer-events-none"></div>

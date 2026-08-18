@@ -88,13 +88,11 @@ function App() {
           <About />
           <Services />
           <Projects />
-          <div className="sticky top-[min(100vh,850px)] w-full z-20 bg-white dark:bg-[#0a0a0a]">
-            <ExperienceEducation />
-            <Certifications />
-            <Skills />
-            {/* Invisible trigger for Contact section */}
-            <div id="contact-trigger" className="absolute bottom-0 translate-y-full w-full h-[min(50vh,600px)] pointer-events-none" />
-          </div>
+          <ExperienceEducation />
+          <Certifications />
+          <Skills />
+          {/* Invisible trigger for Contact section */}
+          <div id="contact-trigger" className="absolute bottom-0 translate-y-full w-full h-[min(50vh,600px)] pointer-events-none" />
         </div>
 
         {/* 2. BACKGROUND REVEAL LAYER (Contact Section) */}
