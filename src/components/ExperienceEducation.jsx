@@ -295,7 +295,7 @@ const ExperienceEducation = () => {
                 <span
                   className="py-2 inline-block text-white dark:text-[#080a0e] cursor-default"
                   style={{
-                    WebkitTextStroke: '2px #ef4444',
+                    WebkitTextStroke: isMobile ? '1px #ef4444' : '2px #ef4444',
                     textShadow: (isExpHovered || expHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
                     color: (!isMobile && (isExpHovered || expHighlight)) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
@@ -317,7 +317,7 @@ const ExperienceEducation = () => {
                 <span
                   className="py-2 inline-block text-white dark:text-[#080a0e] cursor-default"
                   style={{
-                    WebkitTextStroke: '2px #ef4444',
+                    WebkitTextStroke: isMobile ? '1px #ef4444' : '2px #ef4444',
                     textShadow: (isEduHovered || eduHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
                     color: (!isMobile && (isEduHovered || eduHighlight)) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
@@ -414,7 +414,7 @@ const ExperienceEducation = () => {
                             }`}
                           style={{
                             fontFamily: '"Syne", sans-serif',
-                            WebkitTextStroke: '2px #ef4444'
+                            WebkitTextStroke: isMobile ? '1px #ef4444' : '2px #ef4444'
                           }}
                         >
                           {item.title}
