@@ -232,7 +232,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative pt-12 md:pt-16 pb-14 px-5 lg:px-12 bg-no-repeat text-gray-900 dark:text-white overflow-hidden transition-colors duration-500 h-full min-h-screen flex flex-col justify-center"
+      className="relative pt-12 md:pt-16 pb-14 px-5 lg:px-12 bg-no-repeat text-gray-900 dark:text-white overflow-hidden transition-colors duration-500 h-full lg:min-h-screen flex flex-col justify-center"
     >
       <div 
         className="absolute inset-0 -z-10 pointer-events-none transition-all duration-700 dark:opacity-20 dark:brightness-150"
