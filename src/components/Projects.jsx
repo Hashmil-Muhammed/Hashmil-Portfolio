@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className="relative flex-shrink-0 w-[75vw] max-w-[740px] xl:max-w-[850px] portrait:max-w-[1300px] portrait:w-[1300px] aspect-[4/5] sm:aspect-square md:aspect-video portrait:md:aspect-[4/3] flex flex-col rounded-[32px] overflow-hidden bg-black group/card shadow-[0_20px_50px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] border border-gray-200/50 dark:border-white/10 transition-transform duration-200 ease-out hover:-translate-y-2 cursor-pointer transform-gpu"
+      className="relative flex-shrink-0 w-[75vw] max-w-[740px] xl:max-w-[850px] aspect-[4/5] sm:aspect-square md:aspect-video flex flex-col rounded-[32px] overflow-hidden bg-black group/card shadow-[0_20px_50px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] border border-gray-200/50 dark:border-white/10 transition-transform duration-200 ease-out hover:-translate-y-2 cursor-pointer transform-gpu"
       style={{ willChange: 'transform' }}
     >
 
@@ -253,7 +253,7 @@ const Projects = () => {
   return (
     <section id="projects">
       {/* Mobile Fallback */}
-      <div className="block md:hidden portrait:block py-20 px-6 bg-gray-50 dark:bg-[#080a0e]">
+      <div className="block md:hidden py-20 px-6 bg-gray-50 dark:bg-[#080a0e]">
         <div className="max-w-2xl mx-auto">
           <div className="mb-10 md:mb-12">
             <div className="flex items-center gap-4 mb-1">
@@ -321,7 +321,7 @@ const Projects = () => {
       {/* Desktop: Sticky Horizontal Scroll */}
       <div
         ref={containerRef}
-        className="hidden md:block portrait:hidden relative"
+        className="hidden md:block relative"
         style={{ height: `calc(${panelCount} * min(85vh, 900px))` }}
       >
         <div className="sticky top-0 h-screen w-full overflow-hidden bg-gray-50 dark:bg-[#080a0e]">
@@ -361,12 +361,11 @@ const Projects = () => {
           />
 
           {/* Section Header */}
-          {/* Section Header */}
           {/* Zoom-Proof Header Container: Anchored to the vertical center (top-1/2) just like the Macbook composition, so their relative distance never changes when zooming! */}
-          <div className="absolute top-1/2 -translate-y-[16rem] md:-translate-y-[21.5rem] portrait:-translate-y-[35rem] left-[8vw] z-20 w-max pointer-events-none flex flex-col">
+          <div className="absolute top-1/2 -translate-y-[16rem] md:-translate-y-[21.5rem] left-[8vw] z-20 w-max pointer-events-none flex flex-col">
             <div className="flex items-center gap-4 mb-1 whitespace-nowrap">
-              <span className="text-sm portrait:text-4xl font-normal tracking-[0.2em] text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none uppercase shrink-0">03.</span>
-              <h2 className="text-3xl md:text-5xl portrait:text-8xl font-extrabold text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none tracking-tight shrink-0" style={{ fontFamily: '"Syne", sans-serif' }}>
+              <span className="text-sm font-normal tracking-[0.2em] text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none uppercase shrink-0">03.</span>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none tracking-tight shrink-0" style={{ fontFamily: '"Syne", sans-serif' }}>
                 What I've Built
               </h2>
               <div className="w-[10rem] md:w-[35rem] lg:w-[45rem] xl:w-[55rem] h-px bg-gray-200 dark:bg-white/20 ml-4 hidden sm:block opacity-30 shrink-0"></div>
@@ -415,63 +414,63 @@ const Projects = () => {
           >
 
             {/* Panel 0: Intro text & 3D Composition */}
-            <div className="flex-shrink-0 w-[110rem] portrait:w-[220rem] flex items-center pr-[8vw] -mt-16 md:-mt-24 relative overflow-visible">
-              <div className="w-full h-full portrait:w-[50%] portrait:scale-[2] portrait:origin-left flex items-center relative overflow-visible">
-                {/* Background 3D Composition (Zoom-proof natively via fixed rem layout) */}
-                <div className="absolute inset-0 w-full h-full pointer-events-none overflow-visible transform-gpu">
-                  <motion.div
-                    className="absolute inset-0 w-full h-full pointer-events-none overflow-visible transform-gpu"
-                    animate={{ y: [-10, 10, -10] }}
-                    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                    style={{ zIndex: 1, willChange: 'transform' }}
-                  >
-                    {/* Layer 1: Background Red/Pink Text (Behind everything) */}
-                    <img
-                      src="/backgrounds/bg-text.png"
-                      alt="Background Text"
-                      className="absolute left-[47rem] top-[-11rem] w-[43.75rem] opacity-80"
-                      style={{ zIndex: 1 }}
-                    />
+            <div className="flex-shrink-0 w-[110rem] flex items-center pr-[8vw] -mt-16 md:-mt-24 relative overflow-visible">
 
-                    {/* Layer 2: Sweeping Ribbon (Exact Position & Size) */}
-                    <img
-                      src="/elements/ribbon.png"
-                      alt="3D Ribbon"
-                      className="absolute left-[-10rem] top-[-6.5rem] w-[140rem] opacity-95"
-                      style={{ zIndex: 2 }}
-                    />
-
-                    {/* Layer 3: Cleaned Ultra-Slim Laptop (Exact Position & Size) */}
-                    <img
-                      src="/elements/laptop.png"
-                      alt="Ultra-Slim Animated Laptop"
-                      className="absolute left-[43.5rem] bottom-[-7.25rem] w-[37.5rem] opacity-100"
-                      style={{ zIndex: 3 }}
-                    />
-                  </motion.div>
-
-                  {/* Layer 5: Floating Ring */}
-                  <motion.img
-                    src="/elements/ring.png"
-                    alt="Floating Ring"
-                    className="absolute left-[73rem] bottom-[2rem] w-[9rem] transform-gpu"
-                    style={{ zIndex: 2, willChange: 'transform' }}
-                    animate={{
-                      x: ["0%", "-600%", "-800%", "-300%", "200%", "0%"],
-                      y: ["0%", "-400%", "-150%", "-500%", "-200%", "0%"],
-                      rotate: [0, 180, 360, 540, 720, 0]
-                    }}
-                    transition={{
-                      duration: 40,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      times: [0, 0.2, 0.4, 0.6, 0.8, 1]
-                    }}
+              {/* Background 3D Composition (Zoom-proof natively via fixed rem layout) */}
+              <div className="absolute inset-0 w-full h-full pointer-events-none overflow-visible transform-gpu">
+                <motion.div
+                  className="absolute inset-0 w-full h-full pointer-events-none overflow-visible transform-gpu"
+                  animate={{ y: [-10, 10, -10] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                  style={{ zIndex: 1, willChange: 'transform' }}
+                >
+                  {/* Layer 1: Background Red/Pink Text (Behind everything) */}
+                  <img
+                    src="/backgrounds/bg-text.png"
+                    alt="Background Text"
+                    className="absolute left-[47rem] top-[-11rem] w-[43.75rem] opacity-80"
+                    style={{ zIndex: 1 }}
                   />
-                </div>
 
-                {/* Foreground Text & Filters */}
-                <div className="w-[70rem] relative z-20 flex flex-col justify-center">
+                  {/* Layer 2: Sweeping Ribbon (Exact Position & Size) */}
+                  <img
+                    src="/elements/ribbon.png"
+                    alt="3D Ribbon"
+                    className="absolute left-[-10rem] top-[-6.5rem] w-[140rem] opacity-95"
+                    style={{ zIndex: 2 }}
+                  />
+
+                  {/* Layer 3: Cleaned Ultra-Slim Laptop (Exact Position & Size) */}
+                  <img
+                    src="/elements/laptop.png"
+                    alt="Ultra-Slim Animated Laptop"
+                    className="absolute left-[43.5rem] bottom-[-7.25rem] w-[37.5rem] opacity-100"
+                    style={{ zIndex: 3 }}
+                  />
+                </motion.div>
+
+                {/* Layer 5: Floating Ring */}
+                <motion.img
+                  src="/elements/ring.png"
+                  alt="Floating Ring"
+                  className="absolute left-[73rem] bottom-[2rem] w-[9rem] transform-gpu"
+                  style={{ zIndex: 2, willChange: 'transform' }}
+                  animate={{
+                    x: ["0%", "-600%", "-800%", "-300%", "200%", "0%"],
+                    y: ["0%", "-400%", "-150%", "-500%", "-200%", "0%"],
+                    rotate: [0, 180, 360, 540, 720, 0]
+                  }}
+                  transition={{
+                    duration: 40,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    times: [0, 0.2, 0.4, 0.6, 0.8, 1]
+                  }}
+                />
+              </div>
+
+              {/* Foreground Text & Filters */}
+              <div className="w-[70rem] relative z-20 flex flex-col justify-center">
                 <motion.h2
                   className="text-5xl lg:text-7xl xl:text-[5.5rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-gray-800 to-gray-500 dark:from-white dark:to-gray-400 drop-shadow-sm leading-[1] tracking-tight mb-6 max-w-4xl"
                   style={{ fontFamily: '"Syne", sans-serif' }}
@@ -537,7 +536,6 @@ const Projects = () => {
                     );
                   })}
                 </motion.div>
-                </div>
               </div>
             </div>
 
