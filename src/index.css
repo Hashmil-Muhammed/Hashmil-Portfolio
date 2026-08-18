@@ -536,4 +536,9 @@ html {
   .portrait-zoom-service {
     zoom: 1.08;
   }
+
+  #skills {
+    min-height: auto !important;
+    height: auto !important;
+  }
 }
