@@ -136,7 +136,7 @@ const ProjectCard = ({ project }) => {
       {/* Bottom Glassmorphic Content Panel */}
       <div className="absolute bottom-0 w-full px-6 md:px-8 pt-6 md:pt-8 pb-3 md:pb-4 z-20 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/70 to-transparent pt-28 pointer-events-none">
 
-        <div className="flex flex-col gap-1.5 mb-4">
+        <div className="flex flex-col gap-0.5 mb-4">
           <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest drop-shadow-md text-gray-300 opacity-90" style={customFont}>
             {project.subtitle}
           </p>
@@ -179,7 +179,7 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className="group/link flex items-center gap-1.5 text-white/80 hover:text-white transition-colors duration-200"
             >
-              <span className="text-[9px] font-bold tracking-widest uppercase relative overflow-hidden" style={customFont}>
+              <span className="text-[10px] font-bold tracking-widest uppercase relative overflow-hidden" style={customFont}>
                 View Live Project
                 <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white transform -translate-x-full group-hover/link:translate-x-0 transition-transform duration-300 ease-out"></span>
               </span>
