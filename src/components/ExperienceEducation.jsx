@@ -145,6 +145,29 @@ const ExperienceEducation = () => {
   const activeIndexRef = useRef(-1);
   const yOffsetsRef = useRef([]);
 
+  const [expHighlight, setExpHighlight] = useState(false);
+  const [eduHighlight, setEduHighlight] = useState(false);
+  const [isExpHovered, setIsExpHovered] = useState(false);
+  const [isEduHovered, setIsEduHovered] = useState(false);
+
+  const { scrollYProgress: sectionProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start 90%', 'start 10%']
+  });
+
+  useMotionValueEvent(sectionProgress, 'change', (v) => {
+    if (v > 0.1 && v <= 0.45) {
+      setExpHighlight(true);
+      setEduHighlight(false);
+    } else if (v > 0.45 && v <= 0.8) {
+      setExpHighlight(false);
+      setEduHighlight(true);
+    } else {
+      setExpHighlight(false);
+      setEduHighlight(false);
+    }
+  });
+
   const { scrollYProgress } = useScroll({
     target: timelineRef,
     offset: ['start center', 'end 0%'],
@@ -265,11 +288,12 @@ const ExperienceEducation = () => {
                   className="py-2 inline-block text-white dark:text-[#080a0e] cursor-default"
                   style={{ 
                     WebkitTextStroke: '2px #ef4444', 
-                    textShadow: '8px 8px 0px #ef4444',
+                    textShadow: (isExpHovered || expHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
+                    color: (isExpHovered || expHighlight) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
                   }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = '#ef4444'; e.currentTarget.style.textShadow = '8px 8px 0px #b91c1c'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = ''; e.currentTarget.style.textShadow = '8px 8px 0px #ef4444'; }}
+                  onMouseEnter={() => setIsExpHovered(true)}
+                  onMouseLeave={() => setIsExpHovered(false)}
                 >
                   Experience
                 </span>
@@ -286,11 +310,12 @@ const ExperienceEducation = () => {
                   className="py-2 inline-block text-white dark:text-[#080a0e] cursor-default"
                   style={{ 
                     WebkitTextStroke: '2px #ef4444', 
-                    textShadow: '8px 8px 0px #ef4444',
+                    textShadow: (isEduHovered || eduHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
+                    color: (isEduHovered || eduHighlight) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
                   }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = '#ef4444'; e.currentTarget.style.textShadow = '8px 8px 0px #b91c1c'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = ''; e.currentTarget.style.textShadow = '8px 8px 0px #ef4444'; }}
+                  onMouseEnter={() => setIsEduHovered(true)}
+                  onMouseLeave={() => setIsEduHovered(false)}
                 >
                   &nbsp;&nbsp;&nbsp;&nbsp;& Education
                 </span>
