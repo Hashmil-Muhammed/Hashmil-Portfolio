@@ -426,7 +426,7 @@ const Projects = () => {
                   <img
                     src="/backgrounds/bg-text.png"
                     alt="Background Text"
-                    className="absolute left-[51rem] top-[-11rem] w-[43.75rem] opacity-80"
+                    className="absolute left-[43rem] top-[-11rem] w-[43.75rem] opacity-80"
                     style={{ zIndex: 1 }}
                   />
 
@@ -434,7 +434,7 @@ const Projects = () => {
                   <img
                     src="/elements/ribbon.png"
                     alt="3D Ribbon"
-                    className="absolute left-[-6rem] top-[-6.5rem] w-[140rem] opacity-95"
+                    className="absolute left-[-14rem] top-[-6.5rem] w-[140rem] opacity-95"
                     style={{ zIndex: 2 }}
                   />
 
@@ -442,7 +442,7 @@ const Projects = () => {
                   <img
                     src="/elements/laptop.png"
                     alt="Ultra-Slim Animated Laptop"
-                    className="absolute left-[47.5rem] bottom-[-7.25rem] w-[37.5rem] opacity-100"
+                    className="absolute left-[39.5rem] bottom-[-7.25rem] w-[37.5rem] opacity-100"
                     style={{ zIndex: 3 }}
                   />
                 </motion.div>
