@@ -297,7 +297,7 @@ const ExperienceEducation = () => {
                   style={{
                     WebkitTextStroke: isMobile ? '1px #ef4444' : '2px #ef4444',
                     textShadow: (isExpHovered || expHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
-                    color: (!isMobile && (isExpHovered || expHighlight)) ? '#ef4444' : '',
+                    color: (isExpHovered || expHighlight) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
                   }}
                   onMouseEnter={() => setIsExpHovered(true)}
@@ -319,7 +319,7 @@ const ExperienceEducation = () => {
                   style={{
                     WebkitTextStroke: isMobile ? '1px #ef4444' : '2px #ef4444',
                     textShadow: (isEduHovered || eduHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
-                    color: (!isMobile && (isEduHovered || eduHighlight)) ? '#ef4444' : '',
+                    color: (isEduHovered || eduHighlight) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
                   }}
                   onMouseEnter={() => setIsEduHovered(true)}
@@ -410,7 +410,7 @@ const ExperienceEducation = () => {
                     {item.type === 'header' ? (
                       <div className={`relative inline-block px-12 md:px-24 py-4 z-20 ${index === 0 ? '-translate-y-1/2' : ''}`}>
                         <h3
-                          className={`text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-[0.1em] transition-colors duration-500 ${(!isMobile && index <= activeIndex) ? 'text-[#ef4444]' : 'text-transparent'
+                          className={`text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-[0.1em] transition-colors duration-500 ${index <= activeIndex ? 'text-[#ef4444]' : 'text-transparent'
                             }`}
                           style={{
                             fontFamily: '"Syne", sans-serif',
