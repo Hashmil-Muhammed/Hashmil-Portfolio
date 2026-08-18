@@ -168,11 +168,11 @@ const ExperienceEducation = () => {
     }
   });
 
-  const [scrollOffset, setScrollOffset] = useState(['start center', window.innerWidth < 768 ? 'end 60%' : 'end 0%']);
+  const [scrollOffset, setScrollOffset] = useState(['start center', window.innerWidth < 768 ? 'end 95%' : 'end 0%']);
 
   useEffect(() => {
     const handleResize = () => {
-      setScrollOffset(['start center', window.innerWidth < 768 ? 'end 60%' : 'end 0%']);
+      setScrollOffset(['start center', window.innerWidth < 768 ? 'end 95%' : 'end 0%']);
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
