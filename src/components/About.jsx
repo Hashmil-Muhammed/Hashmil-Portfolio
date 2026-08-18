@@ -295,7 +295,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative bg-surface dark:bg-dark-surface pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden border-t border-border dark:border-dark-border transition-colors duration-300 z-0"
+      className="relative bg-surface dark:bg-dark-surface pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden border-t border-border dark:border-dark-border transition-colors duration-300 z-0 portrait-zoom-about"
     >
       <div
         className="absolute inset-0 -z-10 pointer-events-none transition-all duration-700 dark:opacity-0"
