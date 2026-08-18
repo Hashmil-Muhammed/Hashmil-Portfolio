@@ -513,6 +513,9 @@ html {
 }
 
 .portrait-zoom { zoom: 1; }
+.portrait-zoom-hero { zoom: 1; }
+
 @media (max-aspect-ratio: 1/1) {
   .portrait-zoom { zoom: 1.6; }
+  .portrait-zoom-hero { zoom: 1.15; }
 }

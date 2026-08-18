@@ -10,7 +10,7 @@ const Hero = ({ isReady }) => {
   return (
     <section
       id="hero"
-      className="relative bg-white dark:bg-dark-bg flex flex-col overflow-hidden portrait-zoom"
+      className="relative bg-white dark:bg-dark-bg flex flex-col overflow-hidden portrait-zoom-hero"
       style={{ minHeight: 'min(100svh, 1100px)' }}
     >
 
