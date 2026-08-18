@@ -509,3 +509,12 @@ html {
     animation-play-state: paused;
   }
 }
+
+@media (max-width: 1535px) {
+  .force-desktop-view {
+    width: 1536px !important;
+    max-width: 1536px !important;
+    min-width: 1536px !important;
+    zoom: calc(100vw / 1536);
+  }
+}

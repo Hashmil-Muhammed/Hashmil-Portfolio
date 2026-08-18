@@ -260,7 +260,7 @@ const ExperienceEducation = () => {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative pt-32 pb-10 px-6 lg:px-10 bg-[url('/backgrounds/samedha.jpg')] dark:bg-none bg-cover bg-top bg-no-repeat dark:bg-[#080a0e] overflow-x-hidden"
+      className="relative pt-32 pb-10 px-6 lg:px-10 bg-[url('/backgrounds/samedha.jpg')] dark:bg-none bg-cover bg-top bg-no-repeat dark:bg-[#080a0e] overflow-x-hidden force-desktop-view"
     >
       {/* Semi-transparent overlay to keep text readable over the image */}
       <div className="absolute inset-0 bg-white/20 dark:hidden z-0 pointer-events-none"></div>
