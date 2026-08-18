@@ -536,4 +536,11 @@ html {
   .portrait-zoom-service {
     zoom: 1.08;
   }
+
+  /* Force desktop-style transparent text with thin outline on mobile for Experience headings ONLY */
+  #experience h2 span,
+  #experience h3.font-black {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #ef4444 !important;
+  }
 }
