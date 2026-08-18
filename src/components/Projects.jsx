@@ -442,7 +442,7 @@ const Projects = () => {
                   <img
                     src="/elements/laptop.png"
                     alt="Ultra-Slim Animated Laptop"
-                    className="absolute left-[39.5rem] bottom-[-7.25rem] w-[37.5rem] opacity-100"
+                    className="absolute left-[39.5rem] bottom-[-10.25rem] w-[37.5rem] opacity-100"
                     style={{ zIndex: 3 }}
                   />
                 </motion.div>
