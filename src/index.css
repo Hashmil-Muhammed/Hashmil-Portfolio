@@ -512,19 +512,28 @@ html {
   }
 }
 
-.portrait-zoom { zoom: 1; }
-.portrait-zoom-hero { zoom: 1; }
-.portrait-zoom-service { zoom: 1; }
+.portrait-zoom {
+  zoom: 1;
+}
+
+.portrait-zoom-hero {
+  zoom: 1;
+}
+
+.portrait-zoom-service {
+  zoom: 1;
+}
 
 @media (max-aspect-ratio: 1/1) {
-  .portrait-zoom { zoom: 1.6; }
-  .portrait-zoom-hero { zoom: 1.08; }
-  .portrait-zoom-service { zoom: 1.08; }
+  .portrait-zoom {
+    zoom: 1.6;
+  }
 
-  /* Force desktop-style transparent text with thin outline on mobile for Experience headings */
-  #experience h2 span,
-  #experience h3 {
-    color: transparent !important;
-    -webkit-text-stroke: 1px #ef4444 !important;
+  .portrait-zoom-hero {
+    zoom: 1.08;
+  }
+
+  .portrait-zoom-service {
+    zoom: 1.08;
   }
 }
