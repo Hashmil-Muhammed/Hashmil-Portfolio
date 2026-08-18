@@ -322,9 +322,9 @@ const Projects = () => {
       <div
         ref={containerRef}
         className="hidden md:block relative"
-        style={{ height: `${panelCount * 85}vh` }}
+        style={{ height: `calc(${panelCount} * min(85vh, 900px))` }}
       >
-        <div className="sticky top-0 h-screen w-full overflow-hidden bg-gray-50 dark:bg-[#080a0e]">
+        <div className="sticky top-0 h-[min(100vh,1100px)] w-full overflow-hidden bg-gray-50 dark:bg-[#080a0e]">
 
           {/* Background Ambient Blobs */}
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden flex items-center justify-center">

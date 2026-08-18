@@ -11,7 +11,7 @@ const Hero = ({ isReady }) => {
     <section
       id="hero"
       className="relative bg-white dark:bg-dark-bg flex flex-col overflow-hidden"
-      style={{ minHeight: '100svh' }}
+      style={{ minHeight: 'min(100svh, 1100px)' }}
     >
 
       {/* Top spacing removed to relocate text downwards */}
@@ -279,7 +279,7 @@ const Hero = ({ isReady }) => {
       {/* ── 6. RESUME MODAL ─────────────────────────────────── */}
       {createPortal(
         <div className={`fixed inset-0 transition-opacity duration-300 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 ${showResume ? 'opacity-100 pointer-events-auto z-[9999]' : 'opacity-0 pointer-events-none z-[-1]'}`}>
-          <div className="bg-white dark:bg-dark-bg w-full max-w-5xl h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden relative">
+          <div className="bg-white dark:bg-dark-bg w-full max-w-5xl h-[min(90vh,900px)] rounded-2xl shadow-2xl flex flex-col overflow-hidden relative">
   
             {/* Header */}
             <div className="border-b border-border dark:border-dark-border p-4 flex justify-between items-center bg-gray-50 dark:bg-dark-surface">
