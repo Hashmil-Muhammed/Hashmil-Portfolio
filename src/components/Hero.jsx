@@ -11,7 +11,7 @@ const Hero = ({ isReady }) => {
     <section
       id="hero"
       className="relative bg-white dark:bg-dark-bg flex flex-col overflow-hidden"
-      style={{ minHeight: 'min(100svh, 1100px)' }}
+      style={{ minHeight: 'min(100svh, 850px)' }}
     >
 
       {/* Top spacing removed to relocate text downwards */}
