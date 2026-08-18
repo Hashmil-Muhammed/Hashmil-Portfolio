@@ -127,7 +127,7 @@ const Navbar = ({ darkMode, toggleDark, activeSection, isReady }) => {
         animation: autoLabelFade 0.25s ease-out forwards;
       }
     `}</style>
-      <header className="fixed top-0 left-0 right-0 z-50">
+      <header className="fixed top-0 left-0 right-0 z-50 portrait-zoom-navbar">
         {/* Scrolled Blur Layer with Mask */}
         <div
           className={`absolute inset-0 pointer-events-none transition-opacity duration-[1500ms] ease-in-out ${(scrolled && !isAtBottom) ? 'opacity-100' : 'opacity-0'} bg-white/1 dark:bg-dark-bg/1 backdrop-blur-[2px]`}

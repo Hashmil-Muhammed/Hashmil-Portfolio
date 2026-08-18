@@ -524,6 +524,10 @@ html {
   zoom: 1;
 }
 
+.portrait-zoom-navbar {
+  zoom: 1;
+}
+
 @media (max-aspect-ratio: 1/1) {
   .portrait-zoom {
     zoom: 1.6;
@@ -534,6 +538,10 @@ html {
   }
 
   .portrait-zoom-service {
+    zoom: 1.08;
+  }
+
+  .portrait-zoom-navbar {
     zoom: 1.08;
   }
 
