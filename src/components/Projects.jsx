@@ -362,7 +362,7 @@ const Projects = () => {
 
           {/* Section Header */}
           {/* Zoom-Proof Header Container: Anchored to the vertical center (top-1/2) just like the Macbook composition, so their relative distance never changes when zooming! */}
-          <div className="absolute top-1/2 -translate-y-[16rem] md:-translate-y-[21.5rem] left-[8vw] z-20 w-max pointer-events-none flex flex-col">
+          <div className="absolute top-1/2 -translate-y-[16rem] md:-translate-y-[21.5rem] left-[8vw] z-20 w-max pointer-events-none flex flex-col portrait-zoom">
             <div className="flex items-center gap-4 mb-1 whitespace-nowrap">
               <span className="text-sm font-normal tracking-[0.2em] text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none uppercase shrink-0">03.</span>
               <h2 className="text-3xl md:text-5xl font-extrabold text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] dark:drop-shadow-none tracking-tight shrink-0" style={{ fontFamily: '"Syne", sans-serif' }}>
@@ -412,9 +412,9 @@ const Projects = () => {
             className="flex items-center h-full gap-16 pl-[8vw] pr-[30vw] relative z-10 transform-gpu w-max"
             style={{ x: xTranslate, willChange: 'transform' }}
           >
-
-            {/* Panel 0: Intro text & 3D Composition */}
-            <div className="flex-shrink-0 w-[110rem] flex items-center pr-[8vw] -mt-16 md:-mt-24 relative overflow-visible">
+            <div className="flex items-center h-full gap-16 portrait-zoom">
+              {/* Panel 0: Intro text & 3D Composition */}
+              <div className="flex-shrink-0 w-[110rem] flex items-center pr-[8vw] -mt-16 md:-mt-24 relative overflow-visible">
 
               {/* Background 3D Composition (Zoom-proof natively via fixed rem layout) */}
               <div className="absolute inset-0 w-full h-full pointer-events-none overflow-visible transform-gpu">
@@ -554,6 +554,7 @@ const Projects = () => {
             ))}
 
             <div className="flex-shrink-0 w-[8vw]" />
+            </div>
           </motion.div>
         </div>
       </div>
