@@ -26,7 +26,7 @@ const Services = () => {
     <section
       id="services"
       ref={sectionRef}
-      className="relative pt-12 md:pt-16 pb-24 px-6 lg:px-10 bg-surface dark:bg-dark-surface overflow-hidden z-0 portrait-zoom-about"
+      className="relative pt-12 md:pt-16 pb-24 px-6 lg:px-10 bg-surface dark:bg-dark-surface overflow-hidden z-0"
     >
       <div
         className="absolute inset-0 -z-10 pointer-events-none transition-all duration-700 dark:opacity-0"
