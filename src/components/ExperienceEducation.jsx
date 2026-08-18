@@ -260,7 +260,7 @@ const ExperienceEducation = () => {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative pt-32 pb-10 px-6 lg:px-10 bg-[url('/backgrounds/samedha.jpg')] dark:bg-none bg-cover bg-top bg-no-repeat dark:bg-[#080a0e] overflow-x-hidden force-desktop-view"
+      className="relative pt-32 pb-10 px-6 lg:px-10 bg-[url('/backgrounds/samedha.jpg')] dark:bg-none bg-cover bg-top bg-no-repeat dark:bg-[#080a0e] overflow-x-hidden"
     >
       {/* Semi-transparent overlay to keep text readable over the image */}
       <div className="absolute inset-0 bg-white/20 dark:hidden z-0 pointer-events-none"></div>
@@ -284,10 +284,10 @@ const ExperienceEducation = () => {
                 className="text-[50px] md:text-[80px] lg:text-[110px] font-black leading-[1.05] tracking-tight"
                 style={{ fontFamily: '"Syne", sans-serif' }}
               >
-                <span 
+                <span
                   className="py-2 inline-block text-white dark:text-[#080a0e] cursor-default"
-                  style={{ 
-                    WebkitTextStroke: '2px #ef4444', 
+                  style={{
+                    WebkitTextStroke: '2px #ef4444',
                     textShadow: (isExpHovered || expHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
                     color: (isExpHovered || expHighlight) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'
@@ -306,10 +306,10 @@ const ExperienceEducation = () => {
                 className="text-[50px] md:text-[80px] lg:text-[110px] font-black leading-[1.05] tracking-tight shrink-0"
                 style={{ fontFamily: '"Syne", sans-serif' }}
               >
-                <span 
+                <span
                   className="py-2 inline-block text-white dark:text-[#080a0e] cursor-default"
-                  style={{ 
-                    WebkitTextStroke: '2px #ef4444', 
+                  style={{
+                    WebkitTextStroke: '2px #ef4444',
                     textShadow: (isEduHovered || eduHighlight) ? '8px 8px 0px #b91c1c' : '8px 8px 0px #ef4444',
                     color: (isEduHovered || eduHighlight) ? '#ef4444' : '',
                     transition: 'color 0.4s ease-out, text-shadow 0.4s ease-out'

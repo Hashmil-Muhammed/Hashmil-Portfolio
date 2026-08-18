@@ -200,6 +200,7 @@
     -webkit-text-stroke: 1px #111115;
     text-shadow: 2px 2px 0px #111115;
   }
+
   .dark .skills-title-sm {
     -webkit-text-stroke: 1px #F4F4F6;
     text-shadow: 2px 2px 0px #F4F4F6;
@@ -209,6 +210,7 @@
     -webkit-text-stroke: 2px currentColor;
     text-shadow: 5px 5px 0px #888888;
   }
+
   .dark .skills-title-lg {
     -webkit-text-stroke: 2px currentColor;
     text-shadow: 5px 5px 0px #888888;
@@ -507,14 +509,5 @@ html {
 
   .animate-marquee-right:hover {
     animation-play-state: paused;
-  }
-}
-
-@media (max-width: 1535px) {
-  .force-desktop-view {
-    width: 1536px !important;
-    max-width: 1536px !important;
-    min-width: 1536px !important;
-    zoom: calc(100vw / 1536);
   }
 }

@@ -295,7 +295,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative bg-surface dark:bg-dark-surface pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden border-t border-border dark:border-dark-border transition-colors duration-300 z-0 force-desktop-view"
+      className="relative bg-surface dark:bg-dark-surface pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden border-t border-border dark:border-dark-border transition-colors duration-300 z-0"
     >
       <div
         className="absolute inset-0 -z-10 pointer-events-none transition-all duration-700 dark:opacity-0"
@@ -370,8 +370,8 @@ const About = () => {
             <span className="text-sm font-normal tracking-[0.2em] text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] dark:drop-shadow-none uppercase transition-transform duration-500 ease-out group-hover:-translate-x-1">
               01.
             </span>
-            <h2 
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight flex items-center justify-start" 
+            <h2
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight flex items-center justify-start"
               style={{ fontFamily: '"Syne", sans-serif' }}
             >
               <span className="text-transparent dark:text-gray-500 bg-clip-text bg-[url('/backgrounds/samedha.jpg')] dark:bg-[none] bg-cover bg-center [filter:drop-shadow(-1px_-1px_1px_rgba(255,255,255,1))_drop-shadow(3px_5px_8px_rgba(0,0,0,0.4))] dark:[filter:none]">

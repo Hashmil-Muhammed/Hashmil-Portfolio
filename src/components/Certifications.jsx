@@ -493,7 +493,7 @@ const Certifications = () => {
   return (
     <section
       id="certifications"
-      className="relative w-full flex items-center justify-center overflow-hidden py-16 md:py-20 force-desktop-view"
+      className="relative w-full flex items-center justify-center overflow-hidden py-16 md:py-20"
       style={{ backgroundColor: currentCert.color, transition: 'background-color 0.5s ease-in-out' }}
     >
       {/* Background Image Texture Overlay */}
