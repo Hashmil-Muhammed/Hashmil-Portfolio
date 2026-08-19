@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Hashmil Muhammed | Interactive 3D Developer Portfolio
+#  Hashmil Muhammed | Interactive 3D Developer Portfolio
 ### *A Next-Generation Personal Web Application*
 
 ![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -12,7 +12,7 @@
 
 <br>
 
-###  **🔴 Live Portfolio Website:** [https://hashmil-portfolio.vercel.app/](https://hashmil-portfolio.vercel.app/)
+###  ** Live Portfolio Website:** [https://hashmil-portfolio.vercel.app/](https://hashmil-portfolio.vercel.app/)
 
 <br>
 
