@@ -12,7 +12,7 @@
 
 <br>
 
-###  ** Live Portfolio Website:** [https://hashmil-portfolio.vercel.app/](https://hashmil-portfolio.vercel.app/)
+###  **Live Portfolio Website:** [https://hashmil-portfolio.vercel.app/](https://hashmil-portfolio.vercel.app/)
 
 <br>
 
