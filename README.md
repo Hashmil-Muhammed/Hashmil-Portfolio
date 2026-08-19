@@ -19,6 +19,7 @@
 > **Overview:** This project is a highly interactive, performance-optimized, and visually striking personal web application designed to showcase my expertise in AI/ML, Data Science, and Full-Stack Development. It leverages WebGL 3D elements, physics-based micro-interactions, and a premium dark-mode aesthetic.
 
 </div>
+<img width="1919" height="949" alt="hero-preview" src="https://github.com/user-attachments/assets/46923d38-1762-4dd6-b0d5-b2cd57bc2dd3" />
 
 ---
 
