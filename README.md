@@ -1,42 +1,69 @@
-# 🚀 Hashmil Muhammed - Interactive 3D Developer Portfolio
+<div align="center">
 
-![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
-![Vite](https://img.shields.io/badge/Vite-8-purple?style=for-the-badge&logo=vite)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-black?style=for-the-badge&logo=framer)
-![Three.js](https://img.shields.io/badge/Three.js-3D-white?style=for-the-badge&logo=three.js)
+# 🚀 Hashmil Muhammed | Interactive 3D Developer Portfolio
+### *A Next-Generation Personal Web Application*
 
-Welcome to the source code of my personal developer portfolio! This project is a highly interactive, performance-optimized, and visually striking web application designed to showcase my skills, projects, certifications, and experience.
+![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite_8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion_12-000000?style=for-the-badge&logo=framer&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-WebGL-white?style=for-the-badge&logo=three.js&logoColor=black)
+![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-It utilizes modern web technologies, incorporating 3D elements, micro-interactions, and smooth physics-based animations to create a memorable and premium user experience.
+<br>
+
+###  **🔴 Live Portfolio Website:** [https://hashmil-portfolio.vercel.app/](https://hashmil-portfolio.vercel.app/)
+
+<br>
+
+> **Overview:** This project is a highly interactive, performance-optimized, and visually striking personal web application designed to showcase my expertise in AI/ML, Data Science, and Full-Stack Development. It leverages WebGL 3D elements, physics-based micro-interactions, and a premium dark-mode aesthetic.
+
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [🌟 Project Overview](#-project-overview)
+- [✨ Key Features](#-key-features)
+- [💻 Tech Stack & Ecosystem](#-tech-stack--ecosystem)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Local Execution & Setup](#-local-execution--setup)
+- [👨‍💻 Author Details](#-author-details)
+
+---
+
+## 🌟 Project Overview
+
+Traditional portfolios are static. This project breaks the mold by incorporating **Three.js 3D renderings**, **Framer Motion physics**, and **Tailwind CSS Glassmorphism** to create a cinematic and immersive user experience. It serves as the central hub for my professional identity, aggregating my top machine learning models, full-stack applications, and data science research into one seamless interface.
 
 ---
 
 ## ✨ Key Features
 
-- **Immersive 3D Experiences**: Integrated interactive 3D globes (`react-globe.gl`) and Spline scenes (`@splinetool/react-spline`) for a modern, futuristic feel.
-- **Fluid Animations**: High-performance, hardware-accelerated animations using `framer-motion` for page transitions, scroll-reveals, and micro-interactions.
-- **Interactive Galleries**: A custom-built, full-screen vertical-tab modal gallery for viewing certifications with animated layout transitions.
-- **Dynamic Theming**: Premium dark-mode aesthetic with glassmorphism overlays, custom gradients, and tailored organization color schemes.
-- **Serverless Contact Form**: Fully functional contact system utilizing `Web3Forms`, securely handling both job inquiries and project collaborations without a backend.
-- **Fully Responsive**: Flawless execution across all device sizes with custom CSS scrollbar hiding and optimized touch targets.
-
-## 🛠️ Tech Stack
-
-### Core
-- **Framework**: [React 19](https://react.dev/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-
-### Libraries & Ecosystem
-- **Animations**: `framer-motion`
-- **3D Graphics**: `three`, `react-globe.gl`, `@splinetool/react-spline`
-- **Icons**: `react-icons`
-- **Form Handling**: Web3Forms (via secure Environment Variables)
+- **🌐 Immersive 3D Experiences**: Integrated interactive 3D globes (`react-globe.gl`) and Spline scenes (`@splinetool/react-spline`) for a modern, futuristic feel.
+- **⚡ Fluid Animations**: High-performance, hardware-accelerated animations using `framer-motion` for cinematic page transitions, scroll-reveals, and micro-interactions.
+- **🎨 Dynamic Theming**: Premium dark-mode aesthetic with glassmorphism overlays, custom mesh gradients, and tailored organization color schemes.
+- **🖱️ Custom Interactions**: Engineered a bespoke animated cursor that reacts to hover states across the application.
+- **📧 Serverless Contact Architecture**: Fully functional contact system utilizing `Web3Forms`, securely handling job inquiries without requiring a dedicated backend server.
+- **📱 Fully Responsive**: Flawless execution across all device sizes (Mobile, Tablet, 4K Displays) with custom CSS scrollbar hiding and optimized touch targets.
 
 ---
 
-## 📂 Project Structure
+## 💻 Tech Stack & Ecosystem
+
+| Layer | Technology | Description |
+| :--- | :--- | :--- |
+| **Core Framework** | React 19 + Vite | Next-gen lightning fast frontend rendering |
+| **Styling Engine** | Tailwind CSS v3.4 | Utility-first CSS for glassmorphism and layouts |
+| **Animations** | Framer Motion v12 | Spring-physics based scroll and layout animations |
+| **3D Rendering** | Three.js & React Globe | WebGL hardware-accelerated interactive models |
+| **Icons & Assets** | React Icons (Lucide/Si) | Scalable vector typography and brand icons |
+| **Form Handling** | Web3Forms | Secure, backend-free SMTP email routing |
+
+---
+
+## 📁 Project Structure
 
 ```text
 portfolio6/
@@ -47,15 +74,16 @@ portfolio6/
 │   └── projects/         # Project screenshots and assets
 ├── src/
 │   ├── components/       # Reusable React components
-│   │   ├── About.jsx     # Personal background
-│   │   ├── Certifications.jsx # Certificate gallery & modal
+│   │   ├── About.jsx     # Personal background & CLI typing effect
+│   │   ├── Certifications.jsx # Certificate gallery & vertical modal
 │   │   ├── Contact.jsx   # Contact form & 3D Globe
 │   │   ├── ExperienceEducation.jsx # Timeline layouts
-│   │   ├── Projects.jsx  # Featured work
+│   │   ├── Hero.jsx      # 3D Spline scene and introduction
+│   │   ├── Projects.jsx  # Featured work and GitHub links
 │   │   ├── Services.jsx  # Service offerings
-│   │   └── Skills.jsx    # Tech stack visualizations
+│   │   └── Skills.jsx    # Tech stack visualizations & counters
 │   ├── data/
-│   │   └── mockData.js   # Centralized content data for the entire app
+│   │   └── mockData.js   # Centralized content API for the entire app
 │   ├── App.jsx           # Main application entry & layout wrapper
 │   ├── index.css         # Global Tailwind directives & custom utilities
 │   └── main.jsx          # React DOM mounting
@@ -67,53 +95,62 @@ portfolio6/
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Local Execution & Setup
 
-### Prerequisites
-
+### 1. Prerequisites
 Ensure you have [Node.js](https://nodejs.org/) (v18+ recommended) installed on your machine.
 
-### Installation
+### 2. Clone the Repository
+```bash
+git clone https://github.com/Hashmil-Muhammed/hashmil-portfolio.git
+cd portfolio6
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/your-portfolio-repo.git
-   cd portfolio6
-   ```
+### 3. Install Dependencies
+```bash
+npm install
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+### 4. Configure Environment Variables
+Create a `.env` file in the root directory. You will need a Web3Forms access key for the contact form to function:
+```env
+VITE_WEB3FORMS_ACCESS_KEY=your_web3forms_key_here
+```
 
-3. **Set up Environment Variables**
-   Create a `.env` file in the root directory and add your Web3Forms access key (or any other required secrets):
-   ```env
-   VITE_WEB3FORMS_ACCESS_KEY=your_web3forms_key_here
-   ```
+### 5. Run the Development Server
+```bash
+npm run dev
+```
+Open `http://localhost:5173` to view the application in your browser.
 
-4. **Run the Development Server**
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:5173` to view it in your browser.
-
-### Production Build
-
-To create an optimized production build:
+### 6. Production Build
+To create an optimized production build for deployment (e.g., Vercel, Netlify):
 ```bash
 npm run build
-```
-You can then preview the built files locally using:
-```bash
 npm run preview
 ```
 
 ---
 
-## 🤝 Contact
+## 👨‍💻 Author Details
 
-**Hashmil Muhammed**  
-Feel free to reach out via the contact form on the live site or connect with me on LinkedIn.
+### Hashmil Muhammed
+**AI Engineer | Data Scientist | Full-Stack Developer**
 
-*Designed & Engineered with ❤️ by Hashmil Muhammed.*
+- 🎓 MCA — SCMS School of Engineering & Technology
+- 💻 Specializing in AI, Machine Learning, Data Engineering, Financial Analytics, and Full-Stack Development
+- 🌱 Passionate about building intelligent, scalable, and production-ready software solutions
+
+**Live Portfolio:** [https://hashmil-portfolio.vercel.app/](https://hashmil-portfolio.vercel.app/)  
+**GitHub:** [https://github.com/Hashmil-Muhammed](https://github.com/Hashmil-Muhammed)  
+**LinkedIn:** [https://www.linkedin.com/in/hashmil-muhammed08/](https://www.linkedin.com/in/hashmil-muhammed08/)
+
+---
+
+<div align="center">
+
+### ⭐ If you found this portfolio useful, consider giving it a Star.
+
+Thank you for visiting!
+
+</div>
